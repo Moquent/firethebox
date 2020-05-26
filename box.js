@@ -13,7 +13,7 @@ class Box {
   }
   display(){
 
-    if(this.body.speed < 6){
+    if(this.body.speed < 9){
       var angle = this.body.angle;
       push();
       translate(this.body.position.x, this.body.position.y);
@@ -23,7 +23,7 @@ class Box {
       pop();
     }
 
-    if(this.body.speed > 6){
+    if(this.body.speed > 9){
       World.remove(world, this.body);
       push();
       this.Visibility = this.Visibility - 5;
