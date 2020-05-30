@@ -33,7 +33,7 @@ function setup() {
   ground = new Ground(600,height,1200,20);
   World.add(world, ground);
 
-  sling = new Sling(ball.body, {x:200, y:200});
+  sling = new Sling(ball.body, {x:300, y:200});
 }
 
 function draw() {
@@ -78,7 +78,7 @@ function mouseReleased(){
 
 function keyPressed(){
   if(keyCode === 32){
-    Matter.Body.setPosition(ball.body, {x: 200, y: 200}); 
+    Matter.Body.setPosition(ball.body, {x: 300, y: 200}); 
     sling.attach(ball.body);
     gamestate = "onsling";
   }
